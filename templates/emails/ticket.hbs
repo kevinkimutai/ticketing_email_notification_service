@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    /* Container styles */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header styles */
+    .header {
+      background-color: #40ebf4; /* Cyan color */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    /* Content styles */
+    .content {
+      margin: 20px 0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .content-name {
+      font-weight: bold;
+    }
+
+    /* Button styles */
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #1aaab8; /* Dark cyan color */
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0c7b87; /* Darker cyan on hover */
+    }
+
+    /* Footer styles */
+    .footer {
+      text-align: center;
+      color: #888888;
+      font-size: 12px;
+      margin-top: 20px;
+      border-top: 1px solid #dddddd;
+      padding-top: 10px;
+    }
+
+    /* Links in footer */
+    .footer a {
+      color: #888888;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #40ebf4; /* Cyan color */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Order Confirmation</h1>
+    </div>
+    <div class="content">
+      <p>Hello <span class="content-name">{{fullname}}</span>,</p>
+      <p>Your ticket order has been confirmed. Please find your ticket file
+        <a href="{{ticketUrl}}" class="button">Download Ticket</a>.
+      </p>
+      <p>Enjoy your event!</p>
+    </div>
+    <div class="footer">
+      <p>Best regards,<br />Your Company</p>
+      <p>1234 Street Address, City, State, ZIP</p>
+      <p>
+        <a href="https://b2msdk.com">Visit our website</a>
+        |
+        <a href="https://b2msdk.com/unsubscribe">Unsubscribe</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
